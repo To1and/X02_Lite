@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -v on
+
+cd projects/X02_Lite/utils
+
+lcm-gen -x vr_lcm_recv.lcm --cpp-hpath ../include
+
+cd ..
+
+mkdir build
+
+cd build
+
+cmake .. 
+# -DCMAKE_PREFIX_PATH=/opt/openrobots
+
+make
+

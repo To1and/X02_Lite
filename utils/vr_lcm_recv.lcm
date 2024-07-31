@@ -1,0 +1,15 @@
+package lcm_gen;
+
+struct vr_lcm_recv
+{
+    int32_t  timestamp;
+    int32_t  num;
+    double   left_arm[6];
+    double   right_arm[6];
+    float    trigger_left;
+    float    trigger_right;
+    float    grip_left;
+    float    grip_right;
+    string   name;
+    boolean  enabled;
+}
