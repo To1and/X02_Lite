@@ -41,20 +41,28 @@ set(dirQuill "third_party/quill")
 set(dirQP "third_party/qpOASES")
 
 
-
+# -------------Behavior Tree CPP-------------
 # ----------Without Arm64 Libraries----------
 set(dirGtest "third_party/gtest")
 set(dirLibSodium "third_party/libsodium")
 set(dirSQLite3 "third_party/sqlite3")
 set(dirZeroMQ "third_party/zeromq")
 set(incBehaviorTreeCPP "third_party/behaviortree_cpp")
+
+
+# ----------------ProXSuite------------------
+set(incProXSuite "third_party/proxsuite")
+set(incSIMDe "third_party/simde")
 # -------------------------------------------
+
 
 
 set(libURDF "third_party/urdfdom")
 set(incFmt "third_party/quill/quill/bundled")
 set(incBoost "third_party/boost")
 set(incMujoco "third_party/mujoco")
+
+
 
 set(allDir
     ${dirEigen}
@@ -70,7 +78,7 @@ set(allDir
     ${dirZeroMQ}
     )
 set(allLib ${allDir} ${libURDF})
-set(allInc ${allDir} ${incFmt} ${incBoost} ${incMujoco} ${incBehaviorTreeCPP})
+set(allInc ${allDir} ${incFmt} ${incBoost} ${incMujoco} ${incBehaviorTreeCPP} ${incSIMDe} ${incProXSuite})
 
 file(GLOB C_SOURCES *.c)
 file(GLOB CPP_SOURCES *.cpp src/*.cpp)

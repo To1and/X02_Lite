@@ -17,3 +17,4 @@ cmake ..
 
 make
 
+#cp -r /usr/local ~/temp
