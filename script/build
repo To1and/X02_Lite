@@ -2,7 +2,7 @@
 
 set -v on
 
-cd projects/X02_Lite/utils
+cd Codefield/X02_Lite/utils
 
 lcm-gen -x vr_lcm_recv.lcm --cpp-hpath ../include
 

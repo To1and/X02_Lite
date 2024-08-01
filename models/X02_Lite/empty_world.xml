@@ -1,0 +1,45 @@
+<mujoco model="empty_world">
+<!--    <compiler angle="radian"/>-->
+<!--    <option timestep="0.0005" integrator="RK4" gravity="0 0 -9.81" impratio="10" apirate="1000" tolerance="1e-6" >-->
+<!--        <flag sensornoise="disable" contact="enable" energy="enable" gravity="enable"/>-->
+<!--    </option>-->
+    <compiler angle="radian" autolimits="true"/>
+
+    <option timestep="0.0005" integrator="RK4" gravity="0 0 -0" impratio="20" apirate="1000" tolerance="1e-6">
+        <flag contact="enable" energy="enable" gravity="disable"/>
+    </option>
+    
+    <visual>
+        <map force="0.1" zfar="30"/>
+        <rgba haze="0.15 0.25 0.35 1"/>
+        <!-- <rgba frustum="1.0 1.0 0.0 0.2"/> -->
+        <quality shadowsize="4096"/>
+        <headlight ambient="0.01 0.01 0.01"/>
+        <global offwidth="800" offheight="800"/>
+        <scale frustum='3'/>
+    </visual>
+
+    <asset>
+        <texture name="groundplane" type="2d" builtin="checker" mark="edge"  rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+        <material name="groundplane" reflectance="0.2" shininess="0.0" specular="0.0" texrepeat="5 5" texture="groundplane" texuniform="true"/>
+    </asset>
+
+    <worldbody>
+        <!-- Floor -->
+        <geom name="floor" condim="3" contype="1" conaffinity="1" material="groundplane" pos="0 0 0" size="200 200 .125" type="plane" priority="1"/>
+        <light diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="1 1 8.0" specular="0.3 0.3 0.3" castshadow="false"/>
+        <light diffuse=".8 .8 .8" dir="0 -.15 -1" directional="false" pos="-3. -3. 8.0" specular="0.3 0.3 0.3" castshadow="false"/>
+        <!-- front view -->
+        <camera mode="fixed" name="frontview" pos="1.6 0 1.45" quat="0.56 0.43 0.43 0.56"/>
+        <!-- for test -->
+        <camera name="0_cam" pos="1.6 0 1.45" quat="0.56 0.43 0.43 0.56" focalpixel="1920 1600" resolution="1920 1200"
+            sensorsize="9.6e-3 6e-3"/>
+        <!-- bird view -->
+        <camera mode="fixed" name="birdview" pos="-0.2 0 3.0" quat="0.7071 0 0 0.7071"/>
+        <!-- agent view -->
+        <camera mode="fixed" name="agentview" pos="0.5 0 1.35" quat="0.653 0.271 0.271 0.653"/>
+        <!-- side view -->
+        <camera mode="fixed" name="sideview" pos="-0.05651774593317116 1.2761224129427358 1.4879572214102434" quat="0.009905065491771751 0.006877963156909582 0.5912228352893879 0.806418094001364" />
+    </worldbody>
+</mujoco>
+

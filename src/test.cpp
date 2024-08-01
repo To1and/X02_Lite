@@ -6,13 +6,13 @@
 
 int main(int argc, char** argv)
 {
-    typedef Eigen::Matrix<double, 12, 1> Vector12d;
-    typedef Eigen::Matrix<double, 14, 1> Vector14d;
+     typedef Eigen::Matrix<double, 12, 1> Vector12d;
+   // typedef Eigen::Matrix<double, 14, 1> Vector14d;
     
-    std::string urdf_path = "/home/toland/projects/X02_Lite/models/X02_Lite/X02lite_V2.urdf";
+    std::string urdf_path = "/home/toland/Codefield/X02_Lite/models/X02_Lite/X02lite_V2.urdf";
     std::shared_ptr<X02_Utils> utils;
     utils = std::make_shared<X02_Utils>(urdf_path);
-    Vector14d sim_joint_states;
+    Vector12d sim_joint_states;
     sim_joint_states[0] = 0.0;
     sim_joint_states[1] = 0.0;
     sim_joint_states[2] = 0.0;
@@ -26,8 +26,8 @@ int main(int argc, char** argv)
     sim_joint_states[9] = 0.0;
     sim_joint_states[10] = 1.5;
     sim_joint_states[11] = 0.0;
-    sim_joint_states[12] = 0.0;
-    sim_joint_states[13] = 0.0;
+    // sim_joint_states[12] = 0.0;
+    // sim_joint_states[13] = 0.0;
     utils->ComputeLeftHandFK(sim_joint_states);
     std::cout << "******\n" << std::endl;
     Eigen::Matrix3d rot_l = utils->M_L->rotation();

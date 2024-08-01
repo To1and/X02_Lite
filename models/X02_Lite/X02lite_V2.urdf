@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="X02_Lite">
+    <mujoco>
+    <compiler meshdir="./meshes/"
+    balanceinertia="true" 
+    discardvisual="false"/>
+  </mujoco>
+  <link name="world"/>
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0008674575897686 0 0.250419497979326" rpy="0 0 0" />
+      <mass value="21.3514144899787" />
+      <inertia ixx="0.282444619501068" ixy="0" ixz="0.00213471129861179" iyy="0.262036603307758" iyz="0" izz="0.149366700090688" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/base_link.STL" />
+      </geometry>
+      <material name="base_link"><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="body_base_Link">
+    <inertial>
+      <origin xyz="-0.0046747671577497 8.99463909891347E-05 -0.0217060492221594" rpy="0 0 0" />
+      <mass value="0.205451153128856" />
+      <inertia ixx="0.000106911111090962" ixy="5.1624641273514E-07" ixz="-8.40762169188954E-07" iyy="0.000105773001038032" iyz="5.37936762652082E-08" izz="0.000193745258135332" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/body_base_Link.STL" />
+      </geometry>
+      <material  name="body_base_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/body_base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="R_shoulder1_Link">
+    <inertial>
+      <origin xyz="0 0 0.0287043762148813" rpy="0 0 0" />
+      <mass value="0.0435712161313586" />
+      <inertia ixx="5.06896648640316E-05" ixy="3.33908667329795E-10" ixz="-1.95143506439375E-08" iyy="2.27856271711796E-05" iyz="-3.03289845858733E-10" izz="3.79416497558822E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_shoulder1_Link.STL" />
+      </geometry>
+      <material name="R_shoulder1_Link"><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_shoulder1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="R_shoulder2_Link">
+    <inertial>
+      <origin xyz="0.0425361495102532 -0.000213321029730179 0.000149625674714455" rpy="0 0 0" />
+      <mass value="0.299552350367621" />
+      <inertia ixx="0.000108219974611033" ixy="9.83040788916784E-07" ixz="2.77443644909471E-07" iyy="0.000158228179178913" iyz="-8.51540808049238E-12" izz="0.000152295540580868" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_shoulder2_Link.STL" />
+      </geometry>
+      <material name="R_shoulder2_Link"> <color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_shoulder2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="R_shoulder3_Link">
+    <inertial>
+      <origin xyz="-0.000241424269363716 0.0049554533245248 0.142337969976296" rpy="0 0 0" />
+      <mass value="0.185734247619053" />
+      <inertia ixx="0.000119826974001989" ixy="1.3768269983907E-07" ixz="2.4071457735654E-07" iyy="0.000124254435864548" iyz="-4.62527220790508E-06" izz="8.03969024015147E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_shoulder3_Link.STL" />
+      </geometry>
+      <material name="R_shoulder3_Link"><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_shoulder3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_elbow_Link">
+    <inertial>
+      <origin xyz="0.01144 0.064537 7.0753E-08" rpy="0 0 0" />
+      <mass value="0.37" />
+      <inertia ixx="0.00014609" ixy="5.8793E-06" ixz="-6.8464E-10" iyy="7.0637E-05" iyz="6.4928E-10" izz="0.0001324" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_elbow_Link.STL" />
+      </geometry>
+      <material name="R_elbow_Link"><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_elbow_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_Forearm_Link">
+    <inertial>
+      <origin xyz="1.4162E-05 4.3666E-05 -0.073771" rpy="0 0 0" />
+      <mass value="0.25" />
+      <inertia ixx="2.8151E-05" ixy="6.5546E-10" ixz="1.005E-08" iyy="3.5712E-05" iyz="-9.3269E-08" izz="2.4309E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_Forearm_Link.STL" />
+      </geometry>
+      <material name="R_Forearm_Link"><color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_Forearm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_Wrist_Link">
+    <inertial>
+      <origin xyz="-2.4109E-09 -0.065491 0.00014034" rpy="0 0 0" />
+      <mass value="0.31" />
+      <inertia ixx="2.0045E-05" ixy="-7.253E-12" ixz="-1.801E-11" iyy="1.7875E-05" iyz="2.4149E-08" izz="1.7196E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_Wrist_Link.STL" />
+      </geometry>
+      <material name="R_Wrist_Link"> <color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_Wrist_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link  name="L_shoulder1_Link">
+    <inertial>
+      <origin xyz="6.45266596186467E-05 -9.70784197692288E-07 0.0287043764379032"  rpy="0 0 0" />
+      <mass  value="0.0435712151997001" />
+      <inertia ixx="5.06896647149337E-05" ixy="3.33940566193011E-10" ixz="-1.95140389915468E-08" iyy="2.27856270145984E-05" iyz="-3.03072768689328E-10" izz="3.79416496825137E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_shoulder1_Link.STL" />
+      </geometry>
+      <material name="L_shoulder1_Link"> <color rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_shoulder1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_shoulder2_Link">
+    <inertial>
+      <origin xyz="0.0425361492037823 -0.000213321097255137 0.000149625608066882" rpy="0 0 0" />
+      <mass value="0.29955234889539" />
+      <inertia ixx="0.000108219974391823" ixy="9.83041284835192E-07" ixz="2.77443664833048E-07" iyy="0.000158228177955827" iyz="-8.50082398897971E-12" izz="0.000152295539117999" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_shoulder2_Link.STL" />
+      </geometry>
+      <material name="L_shoulder2_Link"> <color rgba="1 1 1 1" /> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_shoulder2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_shoulder3_Link">
+    <inertial>
+      <origin xyz="0.000241424269300045 -0.0049554533253001 0.142337969976294" rpy="0 0 0" />
+      <mass value="0.185734247619053" />
+      <inertia ixx="0.000119826974001989" ixy="1.37682699839042E-07" ixz="-2.40714577356529E-07" iyy="0.000124254435864549" iyz="4.62527220790505E-06" izz="8.03969024015147E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_shoulder3_Link.STL" />
+      </geometry>
+      <material name="L_shoulder3_Link"><color rgba="1 1 1 1" /> </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_shoulder3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_elbow_Link">
+    <inertial>
+      <origin xyz="0.01144 -0.064537 -7.014E-08" rpy="0 0 0" />
+      <mass value="0.37" />
+      <inertia ixx="0.00014609" ixy="-5.8793E-06" ixz="6.8511E-10" iyy="7.0637E-05" iyz="6.4767E-10" izz="0.0001324" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_elbow_Link.STL" />
+      </geometry>
+      <material name="L_elbow_Link"> <color   rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_elbow_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_Foerarm_Link">
+    <inertial>
+      <origin xyz="-1.4162E-05 4.3666E-05 0.073771" rpy="0 0 0" />
+      <mass value="0.25" />
+      <inertia ixx="2.8151E-05" ixy="-6.5546E-10" ixz="1.005E-08" iyy="3.5712E-05" iyz="9.3269E-08" izz="2.4309E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_Foerarm_Link.STL" />
+      </geometry>
+      <material  name="L_Foerarm_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_Foerarm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_Wrist_Link">
+    <inertial>
+      <origin xyz="2.4109E-09 0.065491 0.00014034" rpy="0 0 0" />
+      <mass value="0.31" />
+      <inertia ixx="2.0045E-05" ixy="-7.253E-12" ixz="1.801E-11" iyy="1.7875E-05" iyz="-2.4149E-08" izz="1.7196E-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_Wrist_Link.STL" />
+      </geometry>
+      <material  name="L_Wrist_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_Wrist_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+ 
+  <link name="Waist_yaw_Link">
+    <inertial>
+      <origin xyz="-0.000140267105797828 0.0414480002379952 -0.03093421085924" rpy="0 0 0" />
+      <mass value="0.318144598508264" />
+      <inertia ixx="0.000357125507762938" ixy="3.81597023427251E-06" ixz="-8.45858696438045E-07" iyy="0.000249729551759796" iyz="-2.65504330930263E-06" izz="0.000522724287521454" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/Waist_yaw_Link.STL" />
+      </geometry>
+      <material  name="Waist_yaw_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/Waist_yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="Hip_yaw_Link">
+    <inertial>
+      <origin xyz="-0.000928215614239746 -0.0682427302727476 0.024487499975027" rpy="0 0 0" />
+      <mass value="0.18785385223236" />
+      <inertia ixx="0.000208636843876628" ixy="-2.42371417127441E-06" ixz="-1.12824249401697E-07" iyy="0.000171453578760383" iyz="1.21512671470542E-05" izz="0.000278326781346091" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/Hip_yaw_Link.STL" />
+      </geometry>
+      <material  name="Hip_yaw_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/Hip_yaw_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_hip_roll_Link">
+    <inertial>
+      <origin xyz="0.0780900815459438 -0.0209083661647285 -0.0206782397690989" rpy="0 0 0" />
+      <mass value="1.22153151509574" />
+      <inertia ixx="0.00393397889958795" ixy="4.14719046908357E-06" ixz="-0.000221904577531877" iyy="0.00276904728501348" iyz="-5.20699536076736E-05" izz="0.00309258828530874" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_hip_roll_Link.STL" />
+      </geometry>
+      <material  name="R_hip_roll_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_hip_roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_hip_pitch_Link">
+    <inertial>
+      <origin xyz="0.178192567334376 -0.00727638303498681 -3.63977259008746E-05" rpy="0 0 0" />
+      <mass value="2.63766388953408" />
+      <inertia ixx="0.00439363692835025" ixy="0.001427906819881" ixz="9.58770880475424E-07" iyy="0.0254748461918853" iyz="2.21138158226588E-06" izz="0.0261402586874213" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_hip_pitch_Link.STL" />
+      </geometry>
+      <material  name="R_hip_pitch_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_hip_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_knee_Link">
+    <inertial>
+      <origin xyz="0.147464363261662 -0.00556982737753628 -4.16284684445767E-07" rpy="0 0 0" />
+      <mass value="0.49064454308433" />
+      <inertia ixx="0.000417378114180361" ixy="-0.000255382978182787" ixz="-7.12240872020779E-09" iyy="0.0085794792637525" iyz="-1.1031453888089E-10" izz="0.00881240368564623" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_knee_Link.STL" />
+      </geometry>
+      <material  name="R_knee_Link">  <color    rgba="0.419607843137255 0.419607843137255 0.419607843137255 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_knee_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="R_ankle_pitch_Link">
+    <inertial>
+      <origin xyz="-0.90462 -0.016955 0.092506" rpy="0 0 0" />
+      <mass value="0.162" />
+      <inertia ixx="0.48365" ixy="-0.14879" ixz="0.0059774" iyy="3.7068" iyz="4.1161E-05" izz="3.4106" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_ankle_pitch_Link.STL" />
+      </geometry>
+      <material  name="R_ankle_pitch_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/R_ankle_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_hip_roll_Link">
+    <inertial>
+      <origin xyz="0.0780905009315149 -0.0209084401366757 0.0206782855027555" rpy="0 0 0" />
+      <mass value="1.22153829002005" />
+      <inertia ixx="0.00393397340787852" ixy="4.15176728813008E-06" ixz="0.000221902196691747" iyy="0.00276905431059663" iyz="5.20767667853864E-05" izz="0.00309258806340331" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_hip_roll_Link.STL" />
+      </geometry>
+      <material  name="L_hip_roll_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_hip_roll_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_hip_pitch_Link">
+    <inertial>
+      <origin xyz="0.17819256757652 0.00727637219495111 3.63977700606477E-05" rpy="0 0 0" />
+      <mass value="2.63766389722935" />
+      <inertia ixx="0.00439363693405508" ixy="-0.0014279068107422" ixz="-9.58781110717929E-07" iyy="0.0254748462502192" iyz="2.21138325619072E-06" izz="0.0261402587477004" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_hip_pitch_Link.STL" />
+      </geometry>
+      <material  name="L_hip_pitch_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_hip_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_knee_Link">
+    <inertial>
+      <origin xyz="0.14746436326166 0.00556981657718311 4.16284684473522E-07" rpy="0 0 0" />
+      <mass value="0.490644543084329" />
+      <inertia ixx="0.000417378114180361" ixy="0.000255382978182791" ixz="7.12240871901537E-09" iyy="0.00857947926375246" iyz="-1.10314539406277E-10" izz="0.00881240368564619" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_knee_Link.STL" />
+      </geometry>
+      <material  name="L_knee_Link">  <color    rgba="0.419607843137255 0.419607843137255 0.419607843137255 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_knee_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="L_ankle_pitch_Link">
+    <inertial>
+      <origin xyz="0.039805 0.014247 0.0011945" rpy="0 0 0" />
+      <mass value="0.162" />
+      <inertia ixx="0.00025211" ixy="-1.1219E-06" ixz="1.0353E-06" iyy="1.3795E-05" iyz="6.4037E-07" izz="0.00025217" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_ankle_pitch_Link.STL" />
+      </geometry>
+      <material  name="L_ankle_pitch_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/L_ankle_pitch_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <link name="ziti_Link">
+    <inertial>
+      <origin xyz="0.082950590842825 0.000315079549964601 0.226993833498479" rpy="0 0 0" />
+      <mass value="0.00512067879790999" />
+      <inertia ixx="1.30394213485795E-06" ixy="-3.51341664049759E-11" ixz="4.09535398301699E-07" iyy="1.05676153928886E-06" iyz="5.51444099115934E-10" izz="9.50917700863668E-07" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/ziti_Link.STL" />
+      </geometry>
+      <material  name="ziti_Link">  <color    rgba="1 1 1 1" /></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/home/toland/Codefield/X02_Lite/models/X02_Lite/meshes/ziti_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint name="world_fixed" type="fixed">
+    <origin xyz= "0.0 0.0 0.95" rpy="0 0 0"/>
+    <parent link="world"/>
+    <child link="body_base_Link"/>
+  </joint>
+  <joint name="body_base" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="body_base_Link" />
+    <child link="base_link" />
+    <axis xyz="0 0 -1" />
+    <!-- <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" /> -->
+  </joint>
+  <joint name="R_shoulder1" type="revolute">
+    <origin xyz="0 -0.136078524596347 0.308562038248785" rpy="0 1.30899693899578 -1.5707963267949" />
+    <parent link="base_link" />
+    <child link="R_shoulder1_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="R_shoulder2" type="revolute">
+    <origin xyz="0 0 0.060999999999996" rpy="-1.5707963267949 0.261799387799122 0" />
+    <parent link="R_shoulder1_Link" />
+    <child link="R_shoulder2_Link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="R_shoulder3" type="revolute">
+    <origin xyz="0.112 0 0" rpy="1.57079632679458 0 1.5707963267949" />
+    <parent link="R_shoulder2_Link" />
+    <child link="R_shoulder3_Link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="R_elbow" type="revolute">
+    <origin xyz="0 0.00999999999896754 0.173000000000008" rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent link="R_shoulder3_Link" />
+    <child link="R_elbow_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="R_Forearm" type="revolute">
+    <origin xyz="0.00999999999893191 0.109999999999992 0" rpy="1.57079632679458 1.5707963267949 0" />
+    <parent link="R_elbow_Link" />
+    <child link="R_Forearm_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="R_Wrist" type="revolute">
+    <origin xyz="0 0 -0.09"  rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent link="R_Forearm_Link" />
+    <child link="R_Wrist_Link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="L_shoulder1" type="revolute">
+    <origin xyz="0 0.136078524596347 0.308562038248785" rpy="0 1.30899693899577 1.5707963267949" />
+    <parent link="base_link" />
+    <child link="L_shoulder1_Link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="L_shoulder2" type="revolute">
+    <origin xyz="0 0 0.0609999999999959" rpy="-1.5707963267949 0.261799387799122 0" />
+    <parent link="L_shoulder1_Link" />
+    <child link="L_shoulder2_Link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="L_shoulder3" type="revolute">
+    <origin xyz="0.112000000000002 0 0" rpy="1.57079632679458 0 1.5707963267949" />
+    <parent link="L_shoulder2_Link" />
+    <child link="L_shoulder3_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="L_elbow" type="revolute">
+    <origin xyz="0 -0.0100000000009546 0.172999999999991" rpy="-1.5707963267949 0 1.5707963267949" />
+    <parent link="L_shoulder3_Link" />
+    <child link="L_elbow_Link" />
+    <axis xyz="0 0 -1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="L_Foerarm" type="revolute">
+    <origin xyz="0.0100000000002127 -0.11 0" rpy="1.57079632679458 1.5707963267949 0" />
+    <parent link="L_elbow_Link" />
+    <child link="L_Foerarm_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" /><limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="L_Wrist" type="revolute">
+    <origin xyz="0 0 0.09" rpy="1.5707963267949 0 -1.5707963267949" />
+    <parent link="L_Foerarm_Link" />
+    <child link="L_Wrist_Link" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.1415" upper="3.1415" effort="0" velocity="0" />
+  </joint>
+  <joint name="Waist_yaw" type="fixed">
+    <origin xyz="0 0 -0.0582499999998705" rpy="0 0 0" />
+    <parent link="body_base_Link" />
+    <child link="Waist_yaw_Link" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Hip_yaw" type="fixed">
+    <origin xyz="0 0 -0.056399999999996" rpy="0 0 0" />
+    <parent link="Waist_yaw_Link" />
+    <child link="Hip_yaw_Link" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="R_hip_roll" type="fixed">
+    <origin xyz="0 -0.066 0" rpy="0 1.5707963267949 0" />
+    <parent link="Hip_yaw_Link" />
+    <child link="R_hip_roll_Link" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="R_hip_pitch" type="fixed">
+    <origin xyz="0.0858481848152799 -0.0264865420138702 0" rpy="-1.5707963267949 0 0" />
+    <parent link="R_hip_roll_Link" />
+    <child link="R_hip_pitch_Link" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="R_knee" type="fixed">
+    <origin xyz="0.35 0 0" rpy="0 0 0" />
+    <parent link="R_hip_pitch_Link" />
+    <child link="R_knee_Link" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="R_ankle_pitch" type="fixed">
+    <origin xyz="0.35 0 0" rpy="0 0 0" />
+    <parent link="R_knee_Link" />
+    <child link="R_ankle_pitch_Link" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="L_hip_roll" type="fixed">
+    <origin xyz="0 0.0659999999999995 -0.056399999999996" rpy="3.14159265358979 1.5707963267949 0" />
+    <parent link="Waist_yaw_Link" />
+    <child link="L_hip_roll_Link" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="L_hip_pitch" type="fixed">
+    <origin xyz="0.08584818481528 -0.02648654201387 0" rpy="-1.5707963267949 0 0" />
+    <parent link="L_hip_roll_Link" />
+    <child link="L_hip_pitch_Link" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="L_knee" type="fixed">
+    <origin xyz="0.35 0 0" rpy="0 0 0" />
+    <parent link="L_hip_pitch_Link" />
+    <child link="L_knee_Link" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="L_ankle_pitch" type="fixed">
+    <origin xyz="0.35 0 0" rpy="0 0 0" />
+    <parent link="L_knee_Link" />
+    <child link="L_ankle_pitch_Link" />
+    <axis xyz="0 0 1" />
+  </joint>
+  <joint name="ziti" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="ziti_Link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+</robot>
